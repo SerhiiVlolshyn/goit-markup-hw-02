@@ -1,31 +1,21 @@
 :root {
-/* Задники */
-  --odd-inactive-section-background-color: #f5f4fa;
-  --important-background-color: #2f303a;
-  --footer-background: #2f303a
-  --main-bg-color: #ffffff;
-
-/* Текст */
-
-  --main-text-color: #212121;
-  --regular-text-color: #757575;
-  --footer-link-color: #ffffff99;
-  --header-contacts-color: var (--regular-text-color);
-
-  --header-one-color: var(--main-bg-color);
-  --address-color: var(--main-bg-color);
-
-/* Лого */
-
-  --logo-bottom: var(--main-bg-color);
+  --logo-bottom: #ffffff;
   --logo-top: #000000;
   --logo-color: #2196f3;
-
-/* Вспомогательные */
-
+  --main-bg-color: #ffffff;
+  --main-text-color: #212121;
+  --footer-background: #2f303a;
+  --footer-link-color: #ffffff99;
   --pointer: #2196f3;
-  --header-link-color: var(--main-text-color);
-  --active-button-color: var(--main-bg-color);
+  --address-color: #ffffff;
+  --header-link-color: #212121;
+  --header-contacts-color: #757575;
+  --odd-section-background-color: #f5f4fa;
+  --inactive-background-color: #f5f4fa;
+  --active-button-color: #ffffff;
+  --header-one-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --regular-text-color: #757575;
 
   --letter-spreding-for-headers: 0.06em;
 }
@@ -47,7 +37,7 @@ header {
 }
 
 footer {
-  background-color: #2f303a ;
+  background-color: var(--footer-background);
 }
 
 .main-title {
@@ -127,7 +117,7 @@ a:focus {
 /* задаём цвет фона для нечётных элементов */
 
 .odd-section {
-  background-color: var(--odd-inactive-section-background-color);
+  background-color: var(--odd-section-background-color);
 }
 
 /* кнопки */
@@ -164,7 +154,7 @@ button[type="button"]:focus {
 
 button.inactive {
   color: var(--main-text-color);
-  background-color: var(--odd-inactive-section-background-color);
+  background-color: var(--inactive-background-color);
 }
 
 .section-title {
@@ -177,7 +167,7 @@ button.inactive {
 /* Элементы индекса */
 
 .banner {
-  background-color: var(--important-background-color);
+  background-color: var(--hero-background-color);
 }
 
 .advantages p {
