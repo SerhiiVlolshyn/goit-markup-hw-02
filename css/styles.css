@@ -23,7 +23,7 @@
 /* Вспомогательные */
 
   --pointer: #2196f3;
-  --header-link-color: var(--main-bg-color);
+  --header-link-color: var(--main-text-color);
   --active-button-color: var(--main-bg-color);
 
   --letter-spreding-for-headers: 0.06em;
