@@ -12,6 +12,8 @@
   --header-one-color: #ffffff;
   --hero-background-color: #2f303a;
   --regular-text-color: #757575;
+
+  --letter-spreding-for-headers: 0.06em;
 }
 
 /*  #ffffff
@@ -47,14 +49,6 @@ footer {
   width: 1600;
   height: 252;
   background-color: var(--footer-background);
-}
-
-/* попыткиазадать размеры */
-
-.banner {
-  width: 1600;
-  height: 600;
-  background-color: var(--hero-background-color);
 }
 
 h1 {
@@ -101,6 +95,10 @@ ul {
 
 /* управляем внешностью ссылок */
 
+a {
+  text-decoration: none;
+}
+
 header a {
   font-weight: 500;
   color: var(--header-link-color);
@@ -129,15 +127,6 @@ nav {
 a:hover,
 a:focus {
   color: var(--pointer);
-}
-
-a {
-  text-decoration: none;
-}
-
-.portfolio-innerheit a:visited {
-  text-decoration: none;
-  color: var(--main-text-color);
 }
 
 /* задаём цвет фона для нечётных элементов */
@@ -182,6 +171,42 @@ button.inactive {
   background-color: var(--inactive-background-color);
 }
 
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Элементы индекса */
+
+.banner {
+  width: 1600;
+  height: 600;
+  background-color: var(--hero-background-color);
+}
+
+.advantages p {
+  color: var(--regular-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.advantages h3 {
+  text-transform: uppercase;
+}
+
+.team p {
+  color: var(--regular-text-color);
+}
+
+/* Элементы портфолио */
+
+.portfolio-innerheit a:visited {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
 .portfolio-innerheit h3 {
   letter-spacing: 0.06em;
 }
@@ -197,25 +222,4 @@ button.inactive {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
-
-.section-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-.advantages p {
-  color: var(--regular-text-color);
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.advantages h3 {
-  text-transform: uppercase;
-}
-
-.team p {
-  color: var(--regular-text-color);
 }
