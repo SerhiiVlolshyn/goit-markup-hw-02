@@ -1,21 +1,31 @@
 :root {
+/* Задники */
+  --hero-background-color: #2f303a;
+  --odd-section-background-color: #f5f4fa;
+  --inactive-background-color: #f5f4fa;
+  --footer-background: #2f303a;
+  --main-bg-color: #ffffff;
+
+/* Лого */
   --logo-bottom: #ffffff;
   --logo-top: #000000;
   --logo-color: #2196f3;
-  --main-bg-color: #ffffff;
+
+/* Текст */
   --main-text-color: #212121;
-  --footer-background: #2f303a;
-  --footer-link-color: #ffffff99;
-  --pointer: #2196f3;
-  --address-color: #ffffff;
-  --header-link-color: #212121;
   --header-contacts-color: #757575;
-  --odd-section-background-color: #f5f4fa;
-  --inactive-background-color: #f5f4fa;
+  --regular-text-color: #757575;
+
+/* Линки */
+  --footer-link-color: #ffffff99;
+  --header-link-color: #212121;
+
+/* Белые элементы*/
+  --address-color: #ffffff;
   --active-button-color: #ffffff;
   --header-one-color: #ffffff;
-  --hero-background-color: #2f303a;
-  --regular-text-color: #757575;
+
+  --pointer: #2196f3;
 
   --letter-spreding-for-headers: 0.06em;
 }
