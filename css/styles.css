@@ -2,6 +2,7 @@
 /* Задники */
   --odd-inactive-section-background-color: #f5f4fa;
   --important-background-color: #2f303a;
+  --footer-background: #2f303a
   --main-bg-color: #ffffff;
 
 /* Текст */
@@ -46,7 +47,7 @@ header {
 }
 
 footer {
-  background-color: var(--important-background-color);
+  background-color: var(--footer-background);
 }
 
 .main-title {
