@@ -16,17 +16,6 @@
   --letter-spreding-for-headers: 0.06em;
 }
 
-/*  #ffffff
-    #000000
-    №212121 чёрный
-    #2F303A графитовый
-    #757575
-    #F5F4FA серый
-    #ffffff99
-    #2196F3 голубой
-    
-
-*/
 /* глобальные значения */
 
 body {
@@ -39,15 +28,15 @@ body {
 }
 
 header {
-  width: 1600;
-  height: 80;
+  width: 1600px;
+  /* height: 80px; */
   background-color: var(--main-bg-color);
   letter-spacing: 0.02em;
 }
 
 footer {
-  width: 1600;
-  height: 252;
+  width: 1600px;
+  height: 252px;
   background-color: var(--footer-background);
 }
 
@@ -56,7 +45,7 @@ h1 {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--letter-spreding-for-headers);
   text-transform: uppercase;
   color: var(--header-one-color);
 }
@@ -68,7 +57,6 @@ h1 {
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
@@ -89,27 +77,26 @@ address {
 
 /* управляем внешностью списков */
 
-ul {
+.list {
   list-style: none;
 }
 
 /* управляем внешностью ссылок */
 
-a {
-  text-decoration: none;
-}
-
 header a {
   font-weight: 500;
   color: var(--header-link-color);
+  text-decoration: none;
 }
 
 header .contacts a {
   color: var(--header-contacts-color);
+  text-decoration: none;
 }
 
 footer a {
   color: #ffffff99;
+  text-decoration: none;
 }
 
 nav .current {
@@ -118,8 +105,6 @@ nav .current {
 
 nav {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
 }
 
 /* позиционирование над элементом */
@@ -163,7 +148,7 @@ button[type="button"]:focus {
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--letter-spreding-for-headers);
 }
 
 button.inactive {
@@ -181,14 +166,13 @@ button.inactive {
 /* Элементы индекса */
 
 .banner {
-  width: 1600;
-  height: 600;
+  width: 1600px;
+  height: 600px;
   background-color: var(--hero-background-color);
 }
 
 .advantages p {
   color: var(--regular-text-color);
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -208,7 +192,7 @@ button.inactive {
 }
 
 .portfolio-innerheit h3 {
-  letter-spacing: 0.06em;
+  letter-spacing: var(--letter-spreding-for-headers);
 }
 
 .portfolio-innerheit p {
@@ -221,5 +205,9 @@ button.inactive {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--letter-spreding-for-headers);
+}
+
+.portfolio-innerheit a {
+  text-decoration: none;
 }
