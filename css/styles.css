@@ -183,6 +183,10 @@ button.inactive {
   color: var(--regular-text-color);
 }
 
+.team img {
+  width: 270;
+}
+
 /* Элементы портфолио */
 
 .portfolio-innerheit a:visited {
