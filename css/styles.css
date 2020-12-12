@@ -1,3 +1,13 @@
+:root {
+  --main-bg-color: #ffffff;
+  --main-text-color: #000000;
+  --footer-background: #2f303a;
+  --pointer: #2196f3;
+  --address-color: #ffffff;
+  --header-link-color: #757575;
+  --odd-section-background-color: #f5f4fa;
+}
+
 /*  #ffffff
     #000000
     №212121 чёрный
@@ -23,13 +33,13 @@ body {
 header {
   width: 1600;
   height: 80;
-  background-color: #ffffff;
+  background-color: var(--main-bg-color);
 }
 
 footer {
   width: 1600;
   height: 252;
-  background-color: #2f303a;
+  background-color: var(--footer-background);
 }
 
 /* попыткиазадать размеры */
@@ -56,7 +66,7 @@ footer {
 /* заставляем адрес выглядеть правильно */
 
 address {
-  color: #ffffff;
+  color: var(--address-color);
   font-style: normal;
 }
 
@@ -69,7 +79,7 @@ ul {
 /* управляем внешностью ссылок */
 
 header a {
-  color: #757575;
+  color: var(--header-link-color);
 }
 
 footer a {
@@ -80,9 +90,13 @@ footer a {
 
 a:hover,
 a:focus {
-  color: #2196f3;
+  color: var(--pointer);
 }
 
 a {
   text-decoration: none;
+}
+
+.odd-section {
+  background-color: var(--odd-section-background-color);
 }
