@@ -1,11 +1,12 @@
 :root {
   --main-bg-color: #ffffff;
-  --main-text-color: #000000;
+  --main-text-color: #212121;
   --footer-background: #2f303a;
   --pointer: #2196f3;
   --address-color: #ffffff;
   --header-link-color: #757575;
   --odd-section-background-color: #f5f4fa;
+  --inactive-background-color: #f5f4fa;
 }
 
 /*  #ffffff
@@ -97,6 +98,33 @@ a {
   text-decoration: none;
 }
 
+/* задаём цвет фона для нечётных элементов */
+
 .odd-section {
   background-color: var(--odd-section-background-color);
+}
+
+/* кнопки */
+.button {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+button[type="button"]:hover,
+button[type="button"]:focus {
+  background-color: var(--pointer);
+}
+
+.button.primary {
+  color: var(--main-text-color);
+  background-color: var(--pointer);
+}
+
+button.inactive {
+  color: var(--main-text-color);
+  background-color: var(--inactive-background-color);
+}
+
+nav .current {
+  color: var(--pointer);
 }
