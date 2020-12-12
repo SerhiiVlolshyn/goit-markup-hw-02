@@ -1,29 +1,28 @@
 :root {
+/* База */
+
+  --white-color: #ffffff;
+
 /* Задники */
-  --hero-background-color: #2f303a;
+ /* --footer-background: #2f303a;
+  --hero-background-color: #2f303a; */
+  --important-background-color: #2f303a;
   --odd-section-background-color: #f5f4fa;
   --inactive-background-color: #f5f4fa;
-  --footer-background: #2f303a;
-  --main-bg-color: #ffffff;
+  --main-bg-color: var(--white-color);
+
 
 /* Лого */
-  --logo-bottom: #ffffff;
+  --logo-bottom: var(--white-color);
   --logo-top: #000000;
   --logo-color: #2196f3;
 
 /* Текст */
   --main-text-color: #212121;
-  --header-contacts-color: #757575;
   --regular-text-color: #757575;
 
-/* Линки */
   --footer-link-color: #ffffff99;
   --header-link-color: #212121;
-
-/* Белые элементы*/
-  --address-color: #ffffff;
-  --active-button-color: #ffffff;
-  --header-one-color: #ffffff;
 
   --pointer: #2196f3;
 
@@ -47,7 +46,10 @@ header {
 }
 
 footer {
+/*
   background-color: var(--footer-background);
+*/
+  background-color: var(--important-background-color);
 }
 
 .main-title {
@@ -57,7 +59,7 @@ footer {
   text-align: center;
   letter-spacing: var(--letter-spreding-for-headers);
   text-transform: uppercase;
-  color: var(--header-one-color);
+  color: var(--white-color);
 }
 
 /* делаем красивое лого */
@@ -81,7 +83,7 @@ footer {
 /* заставляем адрес выглядеть правильно */
 
 address {
-  color: var(--address-color);
+  color: var(--white-color);
   font-style: normal;
 }
 
@@ -95,12 +97,12 @@ address {
 
 header a {
   font-weight: 500;
-  color: var(--header-link-color);
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
 .contacts a {
-  color: var(--header-contacts-color);
+  color: var(--regular-text-color);
   text-decoration: none;
 }
 
@@ -147,11 +149,11 @@ button[type="button"] {
 button[type="button"]:hover,
 button[type="button"]:focus {
   background-color: var(--pointer);
-  color: var(--active-button-color);
+  color: var(--white-color);
 }
 
 .button.primary {
-  color: var(--active-button-color);
+  color: var(--white-color);
   background-color: var(--pointer);
   font-weight: bold;
   font-size: 16px;
