@@ -32,15 +32,11 @@ body {
 }
 
 header {
-  width: 1600px;
-  /* height: 80px; */
   background-color: var(--main-bg-color);
   letter-spacing: 0.02em;
 }
 
 footer {
-  width: 1600px;
-  height: 252px;
   background-color: var(--footer-background);
 }
 
@@ -171,8 +167,6 @@ button.inactive {
 /* Элементы индекса */
 
 .banner {
-  width: 1600px;
-  height: 600px;
   background-color: var(--hero-background-color);
 }
 
