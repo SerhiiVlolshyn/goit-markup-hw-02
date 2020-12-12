@@ -89,7 +89,7 @@ header a {
   text-decoration: none;
 }
 
-header .contacts a {
+.contacts a {
   color: var(--header-contacts-color);
   text-decoration: none;
 }
