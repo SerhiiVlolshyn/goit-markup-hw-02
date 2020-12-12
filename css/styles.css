@@ -40,7 +40,7 @@ footer {
   background-color: var(--footer-background);
 }
 
-.main-title {
+h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
