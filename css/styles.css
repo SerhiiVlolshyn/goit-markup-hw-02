@@ -46,7 +46,7 @@ header {
 }
 
 footer {
-  background-color: var(important-background-color);
+  background-color: var(--important-background-color);
 }
 
 .main-title {
