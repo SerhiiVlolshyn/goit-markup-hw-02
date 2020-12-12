@@ -8,6 +8,8 @@
   --odd-section-background-color: #f5f4fa;
   --inactive-background-color: #f5f4fa;
   --active-button-color: #ffffff;
+  --header-one-color: #ffffff;
+  --hero-background-color: #2f303a;
 }
 
 /*  #ffffff
@@ -26,7 +28,7 @@
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -36,6 +38,7 @@ header {
   width: 1600;
   height: 80;
   background-color: var(--main-bg-color);
+  letter-spacing: 0.02em;
 }
 
 footer {
@@ -49,12 +52,31 @@ footer {
 .banner {
   width: 1600;
   height: 600;
+  background-color: var(--hero-background-color);
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--header-one-color);
 }
 
 /* делаем красивое лого */
 
 .logo {
   color: #2196f3;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+
+  letter-spacing: 0.03em;
 }
 
 .logotop {
@@ -118,7 +140,7 @@ button[type="button"]:focus {
 }
 
 .button.primary {
-  color: var(--main-text-color);
+  color: var(--active-button-color);
   background-color: var(--pointer);
 }
 
@@ -137,5 +159,4 @@ nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.02em;
 }
