@@ -4,12 +4,14 @@
   --footer-background: #2f303a;
   --pointer: #2196f3;
   --address-color: #ffffff;
-  --header-link-color: #757575;
+  --header-link-color: #212121;
+  --header-contacts-color: #757575;
   --odd-section-background-color: #f5f4fa;
   --inactive-background-color: #f5f4fa;
   --active-button-color: #ffffff;
   --header-one-color: #ffffff;
   --hero-background-color: #2f303a;
+  --regular-text-color: #757575;
 }
 
 /*  #ffffff
@@ -100,7 +102,12 @@ ul {
 /* управляем внешностью ссылок */
 
 header a {
+  font-weight: 500;
   color: var(--header-link-color);
+}
+
+header .contacts a {
+  color: var(--header-contacts-color);
 }
 
 footer a {
@@ -145,6 +152,13 @@ a {
   background-color: var(--main-bg-color);
 }
 
+button[type="button"] {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
 button[type="button"]:hover,
 button[type="button"]:focus {
   background-color: var(--pointer);
@@ -154,6 +168,13 @@ button[type="button"]:focus {
 .button.primary {
   color: var(--active-button-color);
   background-color: var(--pointer);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 button.inactive {
@@ -165,6 +186,36 @@ button.inactive {
   letter-spacing: 0.06em;
 }
 
+.portfolio-innerheit p {
+  color: var(--regular-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.portfolio-innerheit h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
 .section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
+}
+
+.advantages p {
+  color: var(--regular-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.advantages h3 {
+  text-transform: uppercase;
+}
+
+.team p {
+  color: var(--regular-text-color);
 }
