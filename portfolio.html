@@ -20,9 +20,9 @@
         <nav> <!--Лого сайта-->
         <a class="logo" href="./">Web<span class="logotop">Studio</span></a>
         <ul class="navigation list"> <!--Панель навигации-->
-            <li><a href="./">Студия</a></li> <!--Нужна ссылка/переделать на кнопку-->
-            <li><a class="current" href="./portfolio.html">Портфолио</a></li> <!--Нужна ссылка/переделать на кнопку-->
-            <li><a href="./">Контакты</a></li> <!--Нужна ссылка/переделать на кнопку-->
+            <li><a class="header-link" href="./">Студия</a></li> <!--Нужна ссылка/переделать на кнопку-->
+            <li><a class="current header-link" href="./portfolio.html">Портфолио</a></li> <!--Нужна ссылка/переделать на кнопку-->
+            <li><a class="header-link" href="./">Контакты</a></li> <!--Нужна ссылка/переделать на кнопку-->
         </ul>
         </nav>
         <ul class="contacts list"><!--строка контактов--> 
@@ -32,8 +32,10 @@
     </header>
     <!--Конец шапки-->
 
-<main>
+<main> <!-- Этот тег убирать вообще?-->
 <!--Начало портфолио-->
+    <section>
+        <h1 class="main-title hidden">Портфолио</h1>
     <ul class="filtres list">
         <li><button type="button">Все</button></li>
         <li><button type="button">Веб-сайты</button></li>
@@ -56,17 +58,14 @@
         <li><a href="./"><img src="./images/growing-busines.jpg" alt="ноутбук с изображением человека, держащего планшет"><h3>Growing Business</h3><p>Приложение</p></a></li>
 
     </ul>
-
-
+    </section>
 <!--Конец портфолио-->   
 </main>
 
 <!-- Подвал -->
 <footer>
     <a class="logo" href="./index.html">Web<span class="logobot">Studio</span></a>
-    <address>
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
-    </address>
+    <address>г. Киев, пр-т Леси Украинки, 26</address>
     <ul class="contacts">
         <li><a href="mailto:info@example.com">info@example.com</a></li>
         <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
